@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from io import BytesIO
 import base64
 import matplotlib
-from scripts.visualizations import plot_bayesian_update, plot_hierarchical_model
+from HBMviz.scripts.visualizations import plot_bayesian_update, plot_hierarchical_model
 matplotlib.use('Agg')  # Set the backend to Agg
 
 app = Flask(__name__)
