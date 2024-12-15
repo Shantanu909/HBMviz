@@ -33,3 +33,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
     updatePlot();  // Initial plot update
 });
+
