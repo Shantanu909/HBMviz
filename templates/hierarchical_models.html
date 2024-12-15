@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <title>Hierarchical Models</title>
+</head>
+<body>
+    <header>
+        <h1>Hierarchical Models</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/bayesian_inference">Bayesian Inference</a>
+            <a href="/bayesian_hierarchical">Bayesian Hierarchical Models</a>
+            <a href="/astrophysics_case">Astrophysics Case</a>
+        </nav>
+    </header>
+    <main>
+        <p>Learn about hierarchical models with interactive visualizations.</p>
+        
+        <div class="sliders">
+            <label for="group_mean">Group Mean: </label>
+            <input type="range" id="group_mean" min="-10" max="10" step="0.1" value="0">
+            <span id="group_mean_value">0</span>
+        </div>
+        
+        <div class="sliders">
+            <label for="group_variance">Group Variance: </label>
+            <input type="range" id="group_variance" min="0" max="5" step="0.1" value="1">
+            <span id="group_variance_value">1</span>
+        </div>
+        
+        <div class="sliders">
+            <label for="individual_variance">Individual Variance: </label>
+            <input type="range" id="individual_variance" min="0" max="5" step="0.1" value="1">
+            <span id="individual_variance_value">1</span>
+        </div>
+
+        <div id="interactive-plot">
+            <img src="data:image/png;base64,{{ img_str }}" alt="Hierarchical Model Plot">
+        </div>
+    </main>
+
+    <script src="/static/js/scripts.js"></script>
+</body>
+</html>
